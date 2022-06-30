@@ -10,6 +10,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.NotificationCompat
 
 /**
+ * Part 8
+ *
  * This will be the second activity that will launch when the user taps
  * on the notification, or responds to the reply.
  *
@@ -40,6 +42,8 @@ class TapActivity : AppCompatActivity() {
         val notificationId = 1
 
         /**
+         * Part 9
+         *
          * Get the current intent, then use it to get the remote input.
          *
          * The remote input instance should not be null.
@@ -58,6 +62,8 @@ class TapActivity : AppCompatActivity() {
             textView.text = inputString
 
             /**
+             * Part 10
+             *
              * Now we use the channelId, and notificationId to update the notification with
              * the reply.
              *

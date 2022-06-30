@@ -204,6 +204,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     /**
+     *
+     * Part 6
      * This was seen above.
      *
      * This is how we create the channel for the notifications.
@@ -218,6 +220,8 @@ class MainActivity : AppCompatActivity() {
                                           name: String,
                                           chDescription: String) {
         /**
+         * Part 7
+         *
          * SDK should be 8 or above. We need to write a validation to check that
          * to avoid unnecessary app crashes for lower versions.
          *
