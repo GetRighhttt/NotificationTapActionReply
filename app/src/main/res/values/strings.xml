@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BasicNotificationExample</string>
+    <string name="start_notification">Start Notification</string>
+    <string name="we_made_it">We Made It!</string>
+    <string name="first_action_completed">First Action Completed.</string>
+    <string name="second_action_complete">Second Action Complete.</string>
+</resources>
