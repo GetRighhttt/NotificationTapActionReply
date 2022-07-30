@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.NotificationCompat
+import androidx.core.content.ContextCompat.getSystemService
 
 /**
  * Part 8
@@ -52,7 +53,7 @@ class TapActivity : AppCompatActivity() {
          */
         val intent = this.intent
         val remoteInput = RemoteInput.getResultsFromIntent(intent)
-        if(remoteInput != null) {
+        if (remoteInput != null) {
             val inputString = remoteInput.getCharSequence(KEY_REPLY).toString()
 
             /**
@@ -73,7 +74,8 @@ class TapActivity : AppCompatActivity() {
              */
 
             val replyToNotification = NotificationCompat.Builder(
-                this@TapActivity, channelID)
+                this@TapActivity, channelID
+            )
                 .setSmallIcon(android.R.drawable.ic_dialog_info)
                 .setContentText("Thank you! Your reply has been received! ")
                 .build()
